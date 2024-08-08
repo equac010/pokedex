@@ -26,9 +26,9 @@ body {
 }
 
 #pokemon-info {
+    text-align: center;
     width: 250px;
     height: 500px;
-    text-align: center;
 }
 
 #pokemon-list {
@@ -55,6 +55,7 @@ body {
 }
 
 #pokemon-info img {
+    text-align: center;
     width: 160px;
     height: 160px;
     border: 1px solid black;
@@ -64,6 +65,7 @@ body {
 }
 
 #pokemon-types {
+    text-align: center;
     margin-top: 10px;
 }
 
