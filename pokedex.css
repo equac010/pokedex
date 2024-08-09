@@ -10,8 +10,8 @@ body {
 }
 
 #content-box {
-    width: 500px;
-    height: 500px;
+    width: 1600px;
+    height: 1200px;
     border: 10px solid lightgray;
     border-radius: 10px;
 
@@ -20,22 +20,31 @@ body {
     margin: 0 auto;
     margin-top: 60px;
 
-    background: url("assets/pics/pokeball.jpg") no-repeat;
-    background-size: cover;
+    background: url("assets/pics/pokedex.png") no-repeat;
+    background-size: contain;
+}
+
+#pokemon-name{
+    position: absolute;
+    top: 1080px; left: 363px;
+    font-size: 50px;
     
 }
 
 #pokemon-info {
-    text-align: center;
+    text-align: left;
     width: 250px;
     height: 500px;
 }
 
 #pokemon-list {
-    width: 250px;
-    height: 500px;
+    position: absolute;
+    top: 1065px; left: 1398px;
+    width: 200px;
+    height: 50px;
     font-size: 24px;
-    overflow-y: auto;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 
 }
 
@@ -45,7 +54,7 @@ body {
 
 }
 
-.pokemon-name {
+.pokemon-name { /*Box*/
     border: 1px solid black;
     border-radius: 10px;
     background-color: white;
@@ -55,18 +64,21 @@ body {
 }
 
 #pokemon-info img {
-    text-align: center;
-    width: 160px;
-    height: 160px;
-    border: 1px solid black;
+    position: absolute;
+    top: 410px; left: 390px;
+    width: 320px;
+    height: 320px;
     border-radius: 10px;
     margin-top: 20px;
-    background-color: white;
+    background-color: #E1E1E1;
 }
 
 #pokemon-types {
+    position: absolute;
+    top: 1058px; left: 1116px;
     text-align: center;
     margin-top: 10px;
+    font-size: 35px;
 }
 
 .type-box {
@@ -168,15 +180,18 @@ body {
 }
 
 #pokemon-description {
-    width: 230px;
-    height: 100px;
-    background-color: white;
+    position: absolute;
+    top: 440px; left: 1100px;
+    color: white;
+    width: 540.53px;
+    height: 195.5px;
+    background-color: #084035;
     border: 1px solid black;
     border-radius: 10px;
 
     margin: 0 auto;
     margin-top: 10px;
     padding: 2px;
-    font-size: 18px;
+    font-size: 35px;
     overflow-y: auto;
 }
