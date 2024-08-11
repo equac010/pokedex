@@ -10,8 +10,7 @@ window.onload = async function() {
         pokemon.addEventListener("click", updatePokemon);
         document.getElementById("pokemon-list").append(pokemon);
     }
-    document.getElementById("pokemon-name").innerText = pokedex[1]["name"];
-
+    document.getElementById("pokemon-name").innerText = pokedex[1]["name"].toUpperCase();
     document.getElementById("pokemon-description").innerText = pokedex[1]["desc"];
 
     console.log(pokedex);
@@ -55,5 +54,6 @@ function updatePokemon(){
         type.classList.add(types[i]["type"]["name"]); 
         typesDiv.append(type);
     }
+    document.getElementById("pokemon-name").innerText = pokedex[this.id]["name"].toUpperCase();
     document.getElementById("pokemon-description").innerText = pokedex[this.id]["desc"];
 }
